@@ -83,59 +83,74 @@
 <body>
     <div class="container">
         <h1>Privacy Policy</h1>
-        <p class="subtitle">Floré - Plant Care Companion</p>
-        <p class="subtitle">Last updated: April 14, 2026</p>
+        <p class="subtitle">Floré — Plant Care Companion</p>
+        <p class="subtitle">Last updated: April 17, 2026</p>
 
         <div class="highlight">
-            <p>Floré is designed with your privacy in mind. Your plant data stays on your device and is never sold or shared with third parties.</p>
+            <p>Floré is a local-first app. Your plant data lives on your device (and, via your personal iCloud account, on any of your other Apple devices). We do not run our own server, we do not use any third-party analytics or advertising SDKs, and we never sell or share your data.</p>
         </div>
 
         <h2>Information We Collect</h2>
-        <p>Floré collects and stores the following information locally on your device:</p>
+        <p>Floré only stores information you enter into the app yourself:</p>
         <ul>
-            <li>Plant names, types, and photos you add</li>
-            <li>Watering schedules and history</li>
-            <li>Reminders and notes</li>
-            <li>App preferences and settings</li>
-            <li>Gamification data (XP, levels, achievements)</li>
+            <li>Plants you add — names, species/type, birthday or memory date, and any photo you attach</li>
+            <li>Watering history and reminders</li>
+            <li>Plant events (fertilize, repot, custom notes, etc.) you schedule</li>
+            <li>Tags and notes you create</li>
+            <li>App preferences (language, notification time, gamification visibility)</li>
+            <li>Gamification progress (XP, level, streak, achievements)</li>
         </ul>
+        <p>We do <strong>not</strong> collect your name, email, phone number, address, location, contacts, calendar, health data, or any biometric information. There is no sign-up and no user account to create.</p>
 
-        <h2>Data Storage</h2>
-        <p>All your data is stored locally on your device. When you enable iCloud sync, your data is securely stored in your personal iCloud account using Apple's CloudKit technology. We do not have access to your iCloud data.</p>
+        <h2>Where Your Data Is Stored</h2>
+        <p><strong>On your device.</strong> The main database and any plant photos you add are stored locally (plant photos are saved as JPEG files inside the app's private Documents folder).</p>
+        <p><strong>In your personal iCloud.</strong> Floré uses Apple's CloudKit to sync your data between your own Apple devices. Sync uses your iCloud <em>private database</em>, which means your data is stored inside your own Apple ID account. <strong>We (the developer) do not have access to this data.</strong> Only you, signed in with your Apple ID, can see it.</p>
+        <p>Sync is automatic when you are signed in to iCloud on your device. There is no web portal, no shared server, and no way for us to read or export what you store.</p>
+
+        <h2>Device Identifier</h2>
+        <p>To keep sync between your own devices consistent (for example, to avoid duplicates when two devices write the same record), Floré attaches Apple's vendor identifier (<code>identifierForVendor</code>) to each record. This identifier is scoped to Floré and resets if you reinstall the app. It is not an advertising identifier and is never used for tracking or advertising.</p>
 
         <h2>Third-Party Services</h2>
-        <p><strong>Apple Services:</strong> Floré uses Apple's built-in services:</p>
+        <p>Floré does not use any third-party analytics, advertising, attribution, or tracking SDKs. The only external services involved are Apple's own platform services:</p>
         <ul>
-            <li><strong>StoreKit</strong> — for processing in-app purchases. Payment information is handled entirely by Apple.</li>
-            <li><strong>CloudKit</strong> — for optional iCloud synchronization. Data is stored in your personal iCloud account.</li>
-            <li><strong>Push Notifications</strong> — for watering reminders. Notification tokens are managed by Apple.</li>
+            <li><strong>iCloud / CloudKit</strong> — optional sync of your data across your Apple devices, using your private iCloud database.</li>
+            <li><strong>Apple Push Notification service (APNs)</strong> — used only for silent "content-available" pushes that tell the app new iCloud data is available to sync. These pushes do not appear to you and contain no personal content.</li>
+            <li><strong>StoreKit</strong> — if and when you make an in-app purchase, Apple processes the transaction. We never see your payment information.</li>
         </ul>
-        <p>We do not use any third-party analytics, advertising, or tracking services.</p>
+
+        <h2>Notifications</h2>
+        <p>Floré sends notifications to remind you to water your plants, to mark plant birthdays, and to remind you about custom plant events you schedule. All of these notifications are generated <strong>locally on your device</strong> by iOS — they are not sent from any server run by us. If you revoke notification permission in iOS Settings, Floré will simply stop reminding you.</p>
+
+        <h2>Camera and Photos</h2>
+        <p>Floré asks for access to the Camera and to your Photo Library only when you choose to add a photo to a plant. Photos you add are stored only inside Floré's own Documents folder and, if iCloud sync is active, in your personal iCloud. Floré does not read your photo library beyond the picture you pick, and does not upload photos anywhere except your own iCloud.</p>
 
         <h2>In-App Purchases</h2>
-        <p>Floré offers optional premium features through in-app purchases. All transactions are processed by Apple. We do not collect or store any payment information.</p>
+        <p>Floré may offer optional premium features through in-app purchases. All purchases are processed by Apple via StoreKit. Apple confirms the purchase to the app; we do not receive or store your name, email, card details, or billing address. Your Pro status is remembered locally on your device.</p>
 
         <h2>Data Sharing</h2>
-        <p>We do not sell, trade, or share your personal data with third parties. Your plant care data remains private to you.</p>
+        <p>We do not sell your data. We do not share your data with advertisers, data brokers, or any third party. Because we have no server, we have nothing to share in the first place.</p>
 
-        <h2>Data Deletion</h2>
-        <p>You can delete all your data at any time by:</p>
+        <h2>Data Retention and Deletion</h2>
+        <p>Your data stays until you delete it. You can:</p>
         <ul>
-            <li>Deleting individual plants within the app</li>
-            <li>Using the "Reset All Data" option in Settings</li>
-            <li>Uninstalling the app from your device</li>
+            <li>Delete individual plants, events, tags, or photos inside the app — the change also syncs out of your iCloud.</li>
+            <li>Use "Reset All Data" in Settings — this wipes the local database, the local photos folder, and the Floré zone in your iCloud.</li>
+            <li>Uninstall the app — this removes the local copy. To also remove what is in iCloud, sign in to the same Apple ID on another device and use "Reset All Data" there, or manage iCloud storage for Floré from iOS Settings → [your name] → iCloud → Manage Account Storage.</li>
         </ul>
 
         <h2>Children's Privacy</h2>
-        <p>Floré does not knowingly collect personal information from children under 13. The app is suitable for all ages and does not require any personal information to function.</p>
+        <p>Floré is rated 4+ on the App Store and does not contain content intended for children specifically, nor does it knowingly collect personal information from children. Because the app does not ask for a name, email, age, or any identifying information, no personal data from any user — child or adult — ever leaves their own device and iCloud.</p>
+
+        <h2>Security</h2>
+        <p>Data on your device is protected by iOS file-system protections. Data in iCloud is protected by Apple's iCloud security. Because the app has no remote server of its own, there is no server-side database, account, or password for an attacker to compromise on our side.</p>
 
         <h2>Changes to This Policy</h2>
-        <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated revision date.</p>
+        <p>We may update this Privacy Policy if the app's behavior changes (for example, if we add a new feature that changes what is stored). The "Last updated" date above will reflect the latest revision. Material changes will be highlighted at the top of this page.</p>
 
         <div class="contact">
             <h2>Contact Us</h2>
-            <p>If you have any questions about this Privacy Policy, please contact us at:</p>
-            <p><a href="mailto:flore.app.contact@gmail.com">flore.app.contact@gmail.com</a></p>
+            <p>If you have any questions about this Privacy Policy or about how Floré handles your data, please reach out:</p>
+            <p><a href="mailto:flore.helpdesk@gmail.com">flore.helpdesk@gmail.com</a></p>
         </div>
 
         <div class="footer">

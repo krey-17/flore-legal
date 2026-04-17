@@ -87,7 +87,7 @@
         <p class="subtitle">Last updated: April 17, 2026</p>
 
         <div class="highlight">
-            <p>Floré is a local-first app. Your plant data lives on your device (and, via your personal iCloud account, on any of your other Apple devices). We do not run our own server, we do not use any third-party analytics or advertising SDKs, and we never sell or share your data.</p>
+            <p>Floré is a local-first app. Your plant data lives on your device (and, via your personal iCloud account, on any of your other Apple devices). We do not run our own server that stores your plant content, we do not show ads, and we do not sell your personal data.</p>
         </div>
 
         <h2>Information We Collect</h2>
@@ -111,12 +111,13 @@
         <p>To keep sync between your own devices consistent (for example, to avoid duplicates when two devices write the same record), Floré attaches Apple's vendor identifier (<code>identifierForVendor</code>) to each record. This identifier is scoped to Floré and resets if you reinstall the app. It is not an advertising identifier and is never used for tracking or advertising.</p>
 
         <h2>Third-Party Services</h2>
-        <p>Floré does not use any third-party analytics, advertising, attribution, or tracking SDKs. The only external services involved are Apple's own platform services:</p>
+        <p>Floré does not use third-party advertising, attribution, or cross-app tracking SDKs, and does not sell or share your personal data. The external services currently involved are Apple's own platform services:</p>
         <ul>
             <li><strong>iCloud / CloudKit</strong> — optional sync of your data across your Apple devices, using your private iCloud database.</li>
             <li><strong>Apple Push Notification service (APNs)</strong> — used only for silent "content-available" pushes that tell the app new iCloud data is available to sync. These pushes do not appear to you and contain no personal content.</li>
             <li><strong>StoreKit</strong> — if and when you make an in-app purchase, Apple processes the transaction. We never see your payment information.</li>
         </ul>
+        <p>We may add privacy-respecting usage analytics or crash reporting in the future so we can understand how the app is used and fix issues faster. If and when that happens, we will update this policy to name the provider, describe what is collected (for example, aggregated screen views, feature counts, or crash stack traces), and confirm that no advertising identifiers, contact details, or plant content are included. Until this section lists such a service, no usage analytics are active in the app.</p>
 
         <h2>Notifications</h2>
         <p>Floré sends notifications to remind you to water your plants, to mark plant birthdays, and to remind you about custom plant events you schedule. All of these notifications are generated <strong>locally on your device</strong> by iOS — they are not sent from any server run by us. If you revoke notification permission in iOS Settings, Floré will simply stop reminding you.</p>
